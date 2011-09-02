@@ -7,7 +7,7 @@ use_ok('Net::COLOURlovers');
 my $cl = Net::COLOURlovers->new;
 isa_ok( $cl, 'Net::COLOURlovers' );
 
-for (qw( color colors colors_new colors_top colors_random )) {
+for (qw( color colors colors_new colors_top color_random )) {
     can_ok( $cl, $_ );
 }
 
@@ -15,11 +15,11 @@ for (qw( lover lovers lovers_new lovers_top )) {
     can_ok( $cl, $_ );
 }
 
-for (qw( palette palettes palettes_new palettes_top palettes_random )) {
+for (qw( palette palettes palettes_new palettes_top palette_random )) {
     can_ok( $cl, $_ );
 }
 
-for (qw( pattern patterns patterns_new patterns_top patterns_random )) {
+for (qw( pattern patterns patterns_new patterns_top pattern_random )) {
     can_ok( $cl, $_ );
 }
 

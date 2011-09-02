@@ -48,7 +48,7 @@ sub palettes_top {
         'http://www.colourlovers.com/api/palettes/top?format=json' );
 }
 
-sub palettes_random {
+sub palette_random {
     my ( $self, $args ) = @_;
     return (
         $self->palettes(

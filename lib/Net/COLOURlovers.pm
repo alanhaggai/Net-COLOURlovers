@@ -177,7 +177,7 @@ I<Output>: B<C<ARRAYREF> of C<HASHREF>s>
 
 Format same as that for L</color>.
 
-=method C<colors_random>
+=method C<color_random>
 
 I<Input>: B<C<UNDEF>>
 
@@ -327,7 +327,7 @@ I<Output>: B<C<ARRAYREF> of C<HASHREF>s>
 
 Format same as that for L</palette>.
 
-=method C<palettes_random>
+=method C<palette_random>
 
 I<Input>: B<C<UNDEF>>
 
@@ -413,7 +413,7 @@ I<Output>: B<C<ARRAYREF> of C<HASHREF>s>
 
 Format same as that for L</pattern>.
 
-=method C<patterns_random>
+=method C<pattern_random>
 
 I<Input>: B<C<UNDEF>>
 

@@ -48,7 +48,7 @@ sub colors_top {
         'http://www.colourlovers.com/api/colors/top?format=json' );
 }
 
-sub colors_random {
+sub color_random {
     my ( $self, $args ) = @_;
     return (
         $self->colors(

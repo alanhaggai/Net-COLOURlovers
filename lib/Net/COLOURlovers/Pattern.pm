@@ -48,7 +48,7 @@ sub patterns_top {
         'http://www.colourlovers.com/api/patterns/top?format=json' );
 }
 
-sub patterns_random {
+sub pattern_random {
     my ( $self, $args ) = @_;
     return (
         $self->patterns(
