@@ -46,9 +46,12 @@ __END__
 
 =head1 SYNOPSIS
 
-    use Net::ColourLovers;
+    use Net::COLOURlovers;
 
-    my $cl = Net::ColourLovers->new;
+    my $cl = Net::COLOURlovers->new;
+
+    my $pattern = $cl->pattern_random;
+    my @colors = $cl->colors_top( { 'numResults' => 5 } );
 
 A sample page built using this API can be found at: L<http://bit.ly/qtIepU>.
 
