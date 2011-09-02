@@ -32,13 +32,13 @@ sub lovers {
 
 sub lovers_new {
     my ( $self, $args ) = @_;
-    return from_json $self->lovers( $args,
+    return $self->lovers( $args,
         'http://www.colourlovers.com/api/lovers/new?format=json' );
 }
 
 sub lovers_top {
     my ( $self, $args ) = @_;
-    return from_json $self->lovers( $args,
+    return $self->lovers( $args,
         'http://www.colourlovers.com/api/lovers/top?format=json' );
 }
 

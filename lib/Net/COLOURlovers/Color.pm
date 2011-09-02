@@ -38,20 +38,20 @@ sub colors {
 
 sub colors_new {
     my ( $self, $args ) = @_;
-    return from_json $self->colors( $args,
+    return $self->colors( $args,
         'http://www.colourlovers.com/api/colors/new?format=json' );
 }
 
 sub colors_top {
     my ( $self, $args ) = @_;
-    return from_json $self->colors( $args,
+    return $self->colors( $args,
         'http://www.colourlovers.com/api/colors/top?format=json' );
 }
 
 sub colors_random {
     my ( $self, $args ) = @_;
     return (
-        from_json $self->colors(
+        $self->colors(
             {}, 'http://www.colourlovers.com/api/colors/random?format=json'
         )
     )->[0];
