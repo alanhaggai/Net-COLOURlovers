@@ -50,6 +50,8 @@ __END__
 
     my $cl = Net::ColourLovers->new;
 
+A sample page built using this API can be found at: L<http://bit.ly/qtIepU>.
+
 =head3 METHOD FORMAT
 
 Each method listed below has its input and output parametres specified in
