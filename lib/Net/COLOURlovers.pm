@@ -17,9 +17,8 @@ use base qw(
 );
 
 sub new {
-    my $agent = "Net::COLOURlovers/$Net::COLOURlovers::VERSION";
-
-    my $ua = LWP::UserAgent->new( 'agent' => );
+    my $ua = LWP::UserAgent->new(
+        'agent' => "Net::COLOURlovers/$Net::COLOURlovers::VERSION" );
     my $args = { 'ua' => $ua };
 
     return bless $args, __PACKAGE__;
