@@ -17,12 +17,12 @@ use base qw(
 );
 
 sub new {
-    my $class = shift;
+    my $agent = "Net::COLOURlovers/$Net::COLOURlovers::VERSION";
 
-    my $ua = LWP::UserAgent->new( 'agent' => __PACKAGE__ . '/' . $VERSION );
+    my $ua = LWP::UserAgent->new( 'agent' => );
     my $args = { 'ua' => $ua };
 
-    return bless $args, $class;
+    return bless $args, __PACKAGE__;
 }
 
 sub _build_parametres {
